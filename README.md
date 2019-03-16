@@ -4,7 +4,7 @@
 *Formerly styled-space*
 
 React component for applying responsive margin and padding to child elements without a wrapping HTML container.
-Built with [styled-components][sc] and [styled-system][sys]
+Built with [styled-components][sc] and [styled-system][]
 
 ```sh
 npm i @rebass/space
@@ -48,4 +48,4 @@ Prop | Description | Type
 MIT License
 
 [sc]: https://github.com/styled-components/styled-components
-[sys]: https://github.com/jxnblk/styled-system
+[styled-system]: https://styled-system.com
