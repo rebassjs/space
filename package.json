@@ -4,8 +4,8 @@
   "description": "React component for applying responsive margin and padding to child elements without a wrapping HTML container. Built with styled-components and styled-system.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "nyc ava"
     "prepare": "rm -rf dist && babel src -d dist && npm run emotion",
+    "test": "nyc ava ./tests/*.js",
     "emotion": "NODE_ENV=emotion babel src -d dist/emotion"
   },
   "keywords": [],

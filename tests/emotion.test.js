@@ -1,7 +1,7 @@
 import test from 'ava'
 import React from 'react'
 import { create as render } from 'react-test-renderer'
-import Space from './src'
+import Space from '../dist/emotion'
 
 const renderJSON = el => render(el).toJSON()
 
@@ -27,9 +27,9 @@ test('adds classNames to children', t => {
       <h2>hi</h2>
     </Space>
   )
-  const { className } = json[0].props
-  t.true(json[0].props.className.length > 0)
-  t.is(json[1].props.className, className)
+  const { className } = json[1].props
+  t.true(json[1].props.className.length > 0)
+  t.is(json[2].props.className, className)
 })
 
 test('merges with existing child classNames', t => {
@@ -39,6 +39,6 @@ test('merges with existing child classNames', t => {
       <h2>hi</h2>
     </Space>
   )
-  const { className } = json[0].props
+  const { className } = json[1].props
   t.regex(className, /^beep\s/)
 })
