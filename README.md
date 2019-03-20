@@ -24,6 +24,14 @@ const App = props => (
 )
 ```
 
+### Emotion
+
+*Or* for emotion , import `@rebass/space/emotion` (uses v10 `@emotion/styled`)
+
+```js
+import Space from '@rebass/space/emotion'
+```
+
 ## Props
 
 The Space component uses [styled-system's][sys] `space` utility to add margin and padding props.
